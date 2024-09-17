@@ -1,0 +1,164 @@
+body {
+
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
+    padding-bottom: 100px; 
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Twee kolommen van gelijke breedte */
+    gap: 10px; /* Ruimte tussen de kolommen */ 
+}
+@media (max-width: 768px) {
+  .grid-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-container {
+      padding-left: 4rem;
+      padding-right: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container {
+      padding-left: 10rem;
+      padding-right: 12rem;
+  }
+}
+
+.grid-item {
+    background-color: #f2f2f2; /* Achtergrondkleur van de items */
+    padding: 20px; /* Binnenruimte van de items */
+    text-align: center; /* Tekst centreren */
+}
+.afspraakplanner {
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Zorg ervoor dat het element een breedte heeft */
+}
+.afspraakplanner h1{
+  font-family: Pacifico, cursive;
+  color: gray;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.font-class {
+    margin-top: 4em;
+    margin-left: 4em;
+   
+}
+
+.font-class h1{
+    font-family: Pacifico, cursive;
+    color: gray;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+.font-class p {
+    line-height: 0.6;
+    letter-spacing: -0.5px;
+  }
+  #mijnID {
+    color: red;
+    font-size: 20px;
+  }
+
+.buttonRest {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonRest:hover {
+    color:white;
+    background-color: #0056b3;
+}
+
+.buttonLaser {
+    padding: 10px 20px;
+    background-color: #ffa600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonLaser:hover {
+    color:white;
+    background-color: #b35f00;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  padding: 2rem;
+  background-color: #c5cad6;
+  text-align: center;
+ 
+}
+.social-link {
+  font-size: 24px; /* Pas de grootte van de tekst aan */
+  text-decoration: none; /* Verwijder onderstreping van de link */
+  color: #3b5998; /* Kleur van de tekst */
+}
+
+.social-link i {
+  font-size: 30px; /* Pas de grootte van het icoon aan */
+  margin-right: 8px; /* Ruimte tussen het icoon en de tekst */
+}
+
+.social-link-instagram {
+  font-size: 24px; /* Pas de grootte van de tekst aan */
+  text-decoration: none; /* Verwijder onderstreping van de link */
+  color: #98873b; /* Kleur van de tekst */
+}
+
+.social-link-instagram {
+  font-size: 30px; /* Pas de grootte van het icoon aan */
+  margin-right: 8px; /* Ruimte tussen het icoon en de tekst */
+}
+.social-link-whatsapp {
+  font-size: 24px; /* Pas de grootte van de tekst aan */
+  text-decoration: none; /* Verwijder onderstreping van de link */
+  color: #2ed328; /* Kleur van de tekst */
+}
+
+.social-link-whatsapp {
+  font-size: 30px; /* Pas de grootte van het icoon aan */
+  margin-right: 8px; /* Ruimte tussen het icoon en de tekst */
+}
+
+.fixed-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000; /* Zorgt ervoor dat de button altijd boven andere elementen staat */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fixed-button:hover {
+    color:white;
+    background-color: #0056b3;
+}

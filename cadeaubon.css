@@ -1,0 +1,93 @@
+.background-image {
+   
+    position: relative;
+    background-image: url('/image/pexels-hebertsantos-5660500.jpg');
+    background-size: cover;
+    
+    width: 80vh;
+    height: auto;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    border-radius: 10px;;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @media screen {max-width: 500px;
+        display:flex;
+        flex-direction: column;
+        
+    }
+}
+
+.background-image p  ul{
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 20px;
+    border-radius: 10px;
+    @media screen {max-width: 500px;
+        font-size: small;
+        
+    }
+} 
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 2rem;
+    background-color: #c5cad6;
+    text-align: center;
+   
+  }
+  .social-link {
+    font-size: 24px; /* Pas de grootte van de tekst aan */
+    text-decoration: none; /* Verwijder onderstreping van de link */
+    color: #3b5998; /* Kleur van de tekst */
+  }
+  
+  .social-link i {
+    font-size: 30px; /* Pas de grootte van het icoon aan */
+    margin-right: 8px; /* Ruimte tussen het icoon en de tekst */
+  }
+  
+  .social-link-instagram {
+    font-size: 24px; /* Pas de grootte van de tekst aan */
+    text-decoration: none; /* Verwijder onderstreping van de link */
+    color: #98873b; /* Kleur van de tekst */
+  }
+  
+  .social-link-instagram {
+    font-size: 30px; /* Pas de grootte van het icoon aan */
+    margin-right: 8px; /* Ruimte tussen het icoon en de tekst */
+  }
+  .social-link-whatsapp {
+    font-size: 24px; /* Pas de grootte van de tekst aan */
+    text-decoration: none; /* Verwijder onderstreping van de link */
+    color: #2ed328; /* Kleur van de tekst */
+  }
+  
+  .social-link-whatsapp {
+    font-size: 30px; /* Pas de grootte van het icoon aan */
+    margin-right: 8px; /* Ruimte tussen het icoon en de tekst */
+  }
+
+  .fixed-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000; /* Zorgt ervoor dat de button altijd boven andere elementen staat */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fixed-button:hover {
+    color:white;
+    background-color: #0056b3;
+}

@@ -1,0 +1,201 @@
+body {
+
+    margin: 0;
+    padding : 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.rounded-image {
+  border-radius: 20px; /* Pas de waarde aan voor meer of minder ronde hoeken */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.397);
+}
+
+.image-container h4 {
+    font-family: Papyrus, Fantasy;
+    font-weight: 400;
+    color: gray;
+    font-size: 5em;
+    margin-left: 1rem;
+    margin-bottom: 0;
+  
+}
+
+.image-container p {
+    font-family: Papyrus, Fantasy;
+    color: gray;
+    font-size: 1em;
+  
+}
+
+.image-container img {
+    border-radius: 5%; /* Maakt de afbeelding ovaal */
+    width: 30rem; /* Pas de grootte van de afbeelding aan naar wens */
+    height: 40rem; /* Pas de hoogte van de afbeelding aan naar wens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe */
+    
+}
+.carousel-item img{
+    width: 100%;
+    height: 95vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  @media (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+.grid-container-acties {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  @media (max-width: 768px) {
+    .grid-container-acties {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       gap: 1rem;
+    }
+}
+  .grid-item {
+    position: relative;
+    width: 50%;
+  }
+
+  .text {
+    position: absolute;
+    bottom: 10px; /* Pas dit aan naar jouw gewenste positie */
+    left: 10px; /* Pas dit aan naar jouw gewenste positie */
+    background-color: rgba(0, 0, 0, 0.5); /* Achtergrondkleur met transparantie */
+    color: white; /* Tekstkleur */
+    padding: 10px;
+    transition: left 0.5s ease; /* Animatie voor het verplaatsen */
+  }
+
+  .grid-item:hover .text {
+    left: 50px; /* Verplaats de tekst naar rechts bij hover */
+  }
+  .grid-container-.grid-container-acties:hover .text {
+    left: 50px; /* Verplaats de tekst naar rechts bij hover */
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup img {
+    display: block;
+    margin: 15% auto;
+    width: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.grid-container-voorstellen{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 0px;
+  justify-items: center;
+}
+@media (max-width: 768px) {
+  .grid-container-voorstellen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; 
+  }
+}
+
+footer {
+ 
+  padding: 2rem;
+  background-color: #c5cad6;
+  text-align: center;
+  
+}
+.social-link {
+  font-size: 24px; /* Pas de grootte van de tekst aan */
+  text-decoration: none; /* Verwijder onderstreping van de link */
+  color: #3b5998; /* Kleur van de tekst */
+}
+
+.social-link i {
+  font-size: 30px; /* Pas de grootte van het icoon aan */
+  margin-right: 8px; /* Ruimte tussen het icoon en de tekst */
+}
+
+.social-link-instagram {
+  font-size: 24px; /* Pas de grootte van de tekst aan */
+  text-decoration: none; /* Verwijder onderstreping van de link */
+  color: #98873b; /* Kleur van de tekst */
+}
+
+.social-link-instagram {
+  font-size: 30px; /* Pas de grootte van het icoon aan */
+  margin-right: 8px; /* Ruimte tussen het icoon en de tekst */
+}
+.social-link-whatsapp {
+  font-size: 24px; /* Pas de grootte van de tekst aan */
+  text-decoration: none; /* Verwijder onderstreping van de link */
+  color: #2ed328; /* Kleur van de tekst */
+}
+
+.social-link-whatsapp {
+  font-size: 30px; /* Pas de grootte van het icoon aan */
+  margin-right: 8px; /* Ruimte tussen het icoon en de tekst */
+}
+
+.fixed-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000; /* Zorgt ervoor dat de button altijd boven andere elementen staat */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fixed-button:hover {
+    color:white;
+    background-color: #0056b3;
+}
